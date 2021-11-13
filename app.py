@@ -4,7 +4,7 @@ from mongoengine import connect, Document, StringField, IntField
 app = Flask(__name__)
 
 
-connect( db='Book', username='Admin', password='admin', host='mongodb+srv://Admin:admin@cluster0.joaaq.mongodb.net/Book?retryWrites=true&w=majority')
+connect( db='Book', username='Admin', password='admin', host='MONGO URI')
 
 class Book(Document):
     _id = IntField()
